@@ -5,7 +5,7 @@ RUN apk add php7 php7-fpm php7-mcrypt php7-soap php7-openssl php7-gmp php7-pdo_o
 RUN apk add unzip zip
 RUN wget https://github.com/beldah/Pterodactyl-nginx/archive/refs/heads/main.zip
 RUN unzip main.zip
-RUN sudo chmod -R 777 Pterodactyl-nginx-main/*
+RUN chmod -R 777 Pterodactyl-nginx-main/*
 RUN cp -r Pterodactyl-nginx-main/* /home/container/
 RUN rm -r Pterodactyl-nginx-main
 
