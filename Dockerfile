@@ -6,6 +6,7 @@ RUN apk add unzip zip
 RUN wget https://github.com/beldah/Pterodactyl-nginx/archive/refs/heads/main.zip
 RUN unzip main.zip
 RUN cp -r Pterodactyl-nginx-main/* /home/container/
+RUN sudo chmod -R 777 Pterodactyl-nginx-main
 RUN rm -r Pterodactyl-nginx-main
 
 USER container
